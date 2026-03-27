@@ -29,6 +29,7 @@ orgs.newOrg('iot.4diac', 'eclipse-4diac') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      has_discussions: true,
     },
     orgs.newRepo('4diac-examples') {
       allow_merge_commit: true,
@@ -47,6 +48,20 @@ orgs.newOrg('iot.4diac', 'eclipse-4diac') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      description: "Build and cross-compilation environment for 4diac FORTE.",
+      homepage: "https://eclipse.dev/4diac/4diac_fbe/",
+      topics+:[
+       "4diac",
+       "4diac-forte",
+       "build-system",
+       "cross-compilation",
+       "distributed-automation",
+       "eclipse-4diac",
+       "embedded-systems",
+       "iec-61499",
+       "industrial-automation",
+       "runtime",
+      ]
     },
     orgs.newRepo('4diac-forte') {
       allow_merge_commit: true,
@@ -57,6 +72,7 @@ orgs.newOrg('iot.4diac', 'eclipse-4diac') {
       has_discussions: true,
       homepage: "https://eclipse.dev/4diac/4diac_forte/",
       web_commit_signoff_required: false,
+      code_scanning_default_setup_enabled: true,
       topics+: [
         "iec-61499",
         "plc",
@@ -77,6 +93,24 @@ orgs.newOrg('iot.4diac', 'eclipse-4diac') {
       delete_branch_on_merge: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      code_scanning_default_setup_enabled: true,
+      description: "Eclipse 4diac IDE – an open-source engineering tool for IEC 61499-based distributed automation systems.",
+      homepage: "https://eclipse.dev/4diac/4diac_ide/",
+      topics+: [
+       "4diac",
+       "eclipse",
+       "function-block",
+       "function-block-diagram",
+       "iec-61131-3",
+       "iec-61499",
+       "iec61131-3",
+       "iec61499",
+       "industrial-automation",
+       "industrial-control",
+       "industrial-control-system",
+       "plc",
+       "plc-programming",
+      ]
     },
     orgs.newRepo('4diac-toolchain') {
       allow_merge_commit: true,
